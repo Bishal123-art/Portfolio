@@ -1,0 +1,164 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+.Profile-container{
+    display : flex;
+    align-items : center;
+    text-align : center;
+    justify-content : center;
+    height : 10%;
+    min-height: fit-content;
+   /*  background-position: center;
+    background-repeat: no-repeat; */
+}
+.profile-parent {
+    display : flex;
+    align-items : center;
+    color: aliceblue;
+}
+.profile-details-name{
+    font-size: 24px;
+    font-family: 'Roboto',' sans-serif';
+}
+
+.profile-details-role{
+   display: flex;
+   flex-direction : column;
+   margin : 14px 0 24px 0;
+}
+.profile-details-role h1{
+    font-size: 40px;
+    font-family: cursive;
+}
+.profile-details-role .primary-text{
+    color: #fff;
+}
+.highlighted-text{
+    color: darkorange;
+}
+.profile-role-tagline{
+    font-size: 16px;
+    margin: 5px 0 0 0;
+    font-family: "Roboto";
+}
+.profile-option .get-resume{
+    margin: 0 0 0 20px;
+}
+.profile-option .get-resume:hover{
+    margin: 0 0 0 20px;
+    background-color: #fff;
+    color: #000;
+}
+.profile-picture{
+    display : flex;
+    align-items : center;
+    justify-content : center;
+    box-shadow: 0 1px 0px 0px #fff;
+    border-radius: 50%;
+    height: 380px;
+    width: 380px;
+    margin: 0 0px 0 100px;
+}
+.profile-picture-background{
+    height : 92%;
+    width : 92%;
+    background-image: url("./green.jpg");
+    background-size: cover;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.profile-picture-background:hover{
+    transform : scale(1.07);
+    transition: 1s ease-in-out;
+}
+.hire-me{
+    background-color : #1f2235;
+    font-size: 12px;
+    border: 2px solid linen;
+    color: white;
+    padding : 10px 50px;
+    border-radius : 20px;
+}
+.hire-me:hover{
+    color: aliceblue;
+    border: 2px solid #ff5823;
+    background-color : #1f2235
+}
+.get-resume {
+    background-color : #ff5823;
+    font-size: 12px;
+    border: 2px solid linen;
+    color: white;
+    padding : 10px 40px;
+    border-radius : 20px;
+}
+.get-resume:hover{
+    border: 2px solid #1f2235;
+}
+.colz .colz-icon i{
+    color: #fff;
+    padding:8px;
+    padding-left: 0px;
+}
+.colz .colz-icon i:hover {
+  transform : scale(1.5);
+  transition : 1s ease-out
+}
+@media screen and (max-width : 1110px) {
+    .profile-picture{
+        margin: 0 0 0 80px;
+    }
+    .profile-details-role .primary-text{
+        font-size: 32px;
+    }
+    .profile-details-name{
+        font-size: 12px;
+    }
+    .profile-option .hire-me{
+      width: 120px;
+      padding : 11px 0;
+      z-index: 700;
+    }
+}
+@media screen and (max-width : 910px) {
+    .profile-picture{
+        width: 320px;
+        height : 320px;
+        margin: 0 0 0 4px;
+    }
+}
+@media screen and (max-width : 810px) {
+    .profile-picture{
+        width: 320px;
+        height : 320px;
+        margin: 0 !important;
+    }
+    .profile-parent{
+        flex-direction: column-reverse;
+        margin: 40px 0 0 0;
+    }
+    .profile-option{
+        display : flex;
+        justify-content: space-between;
+    }
+    .profile-details{
+        margin: 25px 0 0;
+    }
+    .profile-option .get-resume{
+        margin : 0!important;
+    }
+    .profile-option , .profile-details-role{
+        text-align : center;
+    }
+}
+@media screen and (max-width : 375px) {
+    .profile-picture{
+        height: 275px;
+        width : 275px;
+        margin-top: -99px;
+    }
+    .profile-details{
+        width : 90%;
+    }
+}
